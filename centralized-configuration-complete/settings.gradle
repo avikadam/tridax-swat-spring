@@ -1,0 +1,4 @@
+rootProject.name = 'centralized-configuration'
+
+include 'configuration-client'
+include 'configuration-service'
