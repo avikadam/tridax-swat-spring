@@ -16,6 +16,7 @@
 
 package com.tridax.swat.cloud.configuration.client;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,15 +31,3 @@ public class ConfigurationClientApplication {
 	}
 }
 
-@RefreshScope
-@RestController
-class MessageRestController {
-
-	@Value("${message:Hello default}")
-	private String message;
-
-	@RequestMapping("/message")
-	String getMessage() {
-		return this.message;
-	}
-}

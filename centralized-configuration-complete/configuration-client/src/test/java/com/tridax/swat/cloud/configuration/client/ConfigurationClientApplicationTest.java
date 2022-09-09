@@ -41,11 +41,15 @@ public class ConfigurationClientApplicationTest {
 	@Test
 	public void contextLoads() {
 		assertThat(controller.getMessage()).isNotEqualTo("Hello test");
+
 		TestPropertyValues
-			.of("message:Hello test")
+			.of("app.message:Hello test")
 			.applyTo(environment);
+
 		assertThat(controller.getMessage()).isNotEqualTo("Hello test");
+
 		refresher.refresh();
+
 		assertThat(controller.getMessage()).isEqualTo("Hello test");
 	}
 
