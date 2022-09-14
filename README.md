@@ -1,4 +1,3 @@
-# tridax-swat-spring
-Projects covering various aspects of cloud native microservices using spring
+# Projects covering various aspects of cloud native microservices using spring
 
-## Central configuration service
+1. [Central configuration service](./centralized-configuration-complete)
