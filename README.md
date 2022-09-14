@@ -1,2 +1,4 @@
 # tridax-swat-spring
-Microservices samples
+Projects covering various aspects of cloud native microservices using spring
+
+## Central configuration service
